@@ -1,12 +1,19 @@
-![Automated tests](https://github.com/AliBazzi/IdentityServer4.Contrib.RedisStore/workflows/Automated%20tests/badge.svg)
+![Automated tests](https://github.com/enclave-alistair/Duende.IdentityServer.Contrib.RedisStore/workflows/Build%20and%20Test/badge.svg)
 
-# IdentityServer4.Contrib.RedisStore
+# Duende.IdentityServer.Contrib.RedisStore
 
-IdentityServer4.Contrib.RedisStore is a persistence layer using [Redis](https://redis.io) DB for operational data and for caching capability for Identity Server 4. Specifically, this store provides implementation for [IPersistedGrantStore](http://docs.identityserver.io/en/release/topics/deployment.html#operational-data) and [ICache<T>](http://docs.identityserver.io/en/release/topics/startup.html#caching).
+Duende.IdentityServer.Contrib.RedisStore is a persistence layer using [Redis](https://redis.io) DB for operational data and 
+for caching capability for Duende Identity Server. 
+
+Specifically, this store provides implementation for [IPersistedGrantStore](http://docs.identityserver.io/en/release/topics/deployment.html#operational-data) 
+and [ICache<T>](http://docs.identityserver.io/en/release/topics/startup.html#caching).
+
+> This is a fork of https://github.com/AliBazzi/IdentityServer4.Contrib.RedisStore, to switch to support Duende IdentityServer rather than IdentityServer4. 
+> So all the credit to AliBazzi for building this in the first place.
 
 ## How to use
 
-You need to install the [nuget package](https://www.nuget.org/packages/IdentityServer4.Contrib.RedisStore)
+You need to install the [nuget package](https://www.nuget.org/packages/Duende.IdentityServer.Contrib.RedisStore)
 
 then you can inject the operational store in the Identity Server 4 Configuration at startup using one of the overloads of `AddOperationalStore`:
 
