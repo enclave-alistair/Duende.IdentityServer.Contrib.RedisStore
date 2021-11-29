@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>Redis Store for operational data and for Caching of Duende Identity Server</Description>
+    <Authors>Ali Bazzi &amp; Alistair Evans</Authors>
+    <Company>Ali Bazzi &amp; Alistair Evans</Company>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <PackageReleaseNotes>Initial support for Duende Identity Server v5.</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/enclave-alistair/Duende.IdentityServer.Contrib.RedisStore</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Redis Store Duende IdentityServer</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Ali Bazzi &amp; Alistair Evans</Copyright>
+    <FileVersion>1.0.0.0</FileVersion>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<ContinuousIntegrationBuild Condition="'$(CI)' != '' ">true</ContinuousIntegrationBuild>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<EmbedAllSources>true</EmbedAllSources>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Duende.IdentityServer" Version="5.0.0" />
+    <PackageReference Include="Duende.IdentityServer.Storage" Version="5.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.1.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+
+</Project>
