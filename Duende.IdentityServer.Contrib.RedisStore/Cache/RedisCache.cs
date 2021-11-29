@@ -13,7 +13,7 @@ namespace Duende.IdentityServer.Contrib.RedisStore.Cache
     /// Redis based implementation for <see cref="ICache{T}"/>.
     /// </summary>
     /// <typeparam name="T">The cached type.</typeparam>
-    internal class RedisCache<T> : ICache<T> where T : class
+    public class RedisCache<T> : ICache<T> where T : class
     {
         private readonly IDatabase database;
 
